@@ -6,10 +6,10 @@ function App() {
   
   return (
     <>
-      <header>
-        <a href="/list">리스트</a>
-        /
-        <a href="/wirte">작성</a>
+      <header className="flex">
+        <a className="font-bold p-3 hover:text-red-500" href="/list">리스트</a>
+        //
+        <a className="font-bold p-3 hover:text-red-500" href="/wirte">작성</a>
       </header>
       {/* <Routes>
         <Route path="/list" element={<ListPage />} />
