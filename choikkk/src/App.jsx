@@ -1,13 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import ListPage from "./pages/ListPage"
+import WritePage from "./pages/WritePage"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <p>Hello world</p>
+      <ListPage />
+      <WritePage />
     </>
   )
 }
