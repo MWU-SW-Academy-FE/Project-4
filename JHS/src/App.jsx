@@ -1,8 +1,12 @@
+import ListPage from "./pages/ListPages";
+import WritePage from "./pages/WritePage";
+
 function App() {
   
   return (
     <>
-      Hello World!!!
+      <ListPage />
+      <WritePage/>
     </>
   )
 }
