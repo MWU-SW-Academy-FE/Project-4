@@ -1,8 +1,8 @@
 function WritePage() {
-    return (  
-        <>
-            <h1></h1>
-        </> 
+    return (
+    <>
+        <h1>작성 페이지</h1>
+    </>
     );
 }
 
