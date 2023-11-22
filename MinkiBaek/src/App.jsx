@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import ListPage from './pages/ListPage'
+import WritePage from './pages/WritePage'
 
 
 
@@ -7,7 +9,8 @@ function App() {
 
   return (
     <>
-     hello world!
+     <ListPage />
+     <WritePage />
     </>
   )
 }
