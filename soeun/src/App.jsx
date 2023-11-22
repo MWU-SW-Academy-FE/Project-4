@@ -1,11 +1,18 @@
+import WritePage from "./pages/ListPage"
+import ListPage from "./pages/WritePage"
+
+
+
 
 function App() {
-    const [count, setCount] = useState(0)
-
+   
     return (
         <>
-           Hello world!!!
+          <ListPage/>
+          <WritePage/>
+
         </>
     )
 }
+
 export default App
