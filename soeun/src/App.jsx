@@ -1,18 +1,15 @@
-import WritePage from "./pages/ListPage"
-import ListPage from "./pages/WritePage"
-
-
-
+import ListPage from "./pages/ListPage.jsx"
+import WritePage from "./pages/WritePage.jsx"
 
 function App() {
    
     return (
         <>
-          <ListPage/>
-          <WritePage/>
+          <ListPage />
+          <WritePage />
 
         </>
     )
 }
 
-export default App
+export default App;
