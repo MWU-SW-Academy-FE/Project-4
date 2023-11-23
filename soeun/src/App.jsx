@@ -6,11 +6,15 @@ function App() {
    
     return (
         <>
-          <header>
+          <header className="flex">
             
-            <a href="/list">리스트</a>
-            <a href="/write">작성</a>
+            
+            <a className="font-bold p-3 hover:text-red-500" href="/list">리스트</a>
+            
+            //
 
+            <a className="font-bold p-3 hover:text-red-500" href="/write">작성</a>
+            
           </header> 
 
          {/*
