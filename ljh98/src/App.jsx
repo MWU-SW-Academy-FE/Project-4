@@ -5,15 +5,15 @@ import WritePage from "./pages/WritePage"
 function App() {
   return (
     <>
-      <header>
-        <a href="/list">리스트</a>
-        <a href="/write">작성</a>
+      <header className="flex">
+        <p className="font-bold cursor-grab">리스트</p>
+        <p className="font-bold cursor-grab"> 작성</p>
       </header>
-      <Routes>
+      {/* <Routes>
         <Route path="/list" element={<ListPage />}/>
         <Route path="/write" element={<WritePage />} />
         <Route path="*" element={<Navigate to="/list"/>} />
-      </Routes>
+      </Routes> */}
       
     </>
   )
