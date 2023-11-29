@@ -6,8 +6,8 @@ import WritePage from './pages/WritePage';
 function App() {
   return (
      <Routes>
-        <Route path="/" element={<ListPage />} />
-        <Route path="/writepage" element={<WritePage/>} />
+        <Route path="/" element={<WritePage />} />
+        <Route path="/listpage" element={<ListPage/>} />
       </Routes>
   );
 }
