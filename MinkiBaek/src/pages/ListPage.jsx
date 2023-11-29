@@ -1,7 +1,16 @@
+import { data } from "../data/test";
+
 function ListPage() {
     return ( 
         <>
-            <h1>리스트 페이지</h1>
+            <ul>
+                {data.workouts.map((work) => (
+                    <li key={work.date}>
+                        {work.date} | {work.exercise} 
+                    </li>
+                ))} 
+                
+            </ul>
         </>
      );
 }
