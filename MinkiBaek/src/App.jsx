@@ -1,12 +1,14 @@
-
+import { Route, Routes } from 'react-router-dom';
 import './index.css';
-
+import ListPage from './pages/ListPage';
+import WritePage from './pages/WritePage';
 
 function App() {
   return (
-    <div className="App">
-      <div className="text-3xl font-bold underline">it goes Work!!</div>
-    </div>
+     <Routes>
+        <Route path="/" element={<ListPage />} />
+        <Route path="/writepage" element={<WritePage/>} />
+      </Routes>
   );
 }
     
