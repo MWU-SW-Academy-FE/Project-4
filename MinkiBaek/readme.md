@@ -11,6 +11,8 @@
 - [ ] 리코일 도입
 - [x] 임시데이터 받아 오기.
 - [x] Material-UI 도입
+- [x] Header 디자인 1차
+
 ```bash
  사용한 라이브러리(필수)
 # npm vite

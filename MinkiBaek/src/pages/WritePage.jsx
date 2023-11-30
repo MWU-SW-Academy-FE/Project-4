@@ -9,7 +9,10 @@ function WritePage() {
 
         {state ? (
             <div>
-               Hello
+                <Stack spacing={2} direction="row">
+                <Button variant="text"><Link to="/">운동 작성하기</Link></Button>
+                <Button variant="contained"><Link to="/listpage">운동 내역 확인하기</Link></Button>
+                </Stack>
             </div>
         )  
         : <p>운동 기록을 남기고싶으면 버튼을 클릭하세요</p>}
