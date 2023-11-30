@@ -7,10 +7,11 @@ import Header from "./Layout/Header";
 function Root() {
     return ( 
     <BrowserRouter>
+    <div style={{ marginLeft: '300px', marginRight: '300px' }}>
     <Header />
         <App />
     <Footer />
-
+    </div>
     </BrowserRouter>
     );
 }
