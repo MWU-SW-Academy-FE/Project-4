@@ -10,7 +10,7 @@
 - [x] 테일윈드 도입
 - [ ] 리코일 도입
 - [x] 임시데이터 받아 오기.
-- [x] 스타일 컴포넌트 도입
+- [x] Material-UI 도입
 ```bash
  사용한 라이브러리(필수)
 # npm vite
@@ -23,6 +23,6 @@ npm i react-router-dom
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
-# 스타일 컴포넌트
-npm i styled-components
+# mui 도입
+npm install @material-ui/core @material-ui/icons --legacy-peer-deps
 ```
