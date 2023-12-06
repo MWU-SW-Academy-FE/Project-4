@@ -4,18 +4,19 @@ import { NavLink } from "react-router-dom";
 function Header() {
 	return (
 		<>
-			<header className="flex">
+			<header className="flex flex-shrink-0">
 				<NavLink
 					to="/"
 					className="mr-auto p-3 font-bold hover:text-red-500 cursor-pointer"
 				>
 					로고
 				</NavLink>
-				<ul>
+				<ul className="flex">
 					<li>
-            <NavLink
-              to="/list"
-							className={({ isActive }) => classNames(
+						<NavLink
+							to="/list"
+							className={({ isActive }) =>
+								classNames(
 									`block p-3 font-bold hover:text-red-500 cursor-pointer`,
 									{ "text-red-500": isActive }
 								)
@@ -27,7 +28,8 @@ function Header() {
 					<li>
 						<NavLink
 							to="/write"
-							className={({ isActive }) => classNames(
+							className={({ isActive }) =>
+								classNames(
 									`block p-3 font-bold hover:text-red-500 cursor-pointer`,
 									{ "text-red-500": isActive }
 								)
