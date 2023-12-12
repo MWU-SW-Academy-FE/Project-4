@@ -1,6 +1,6 @@
-import { numberFormat } from "../util/numberFormat";
+import { numberFormat } from "../utill";
 
-function ListPage() {
+function History() {
     const goalCount = 100000;
     const doneCount = 0;
     const restCount = goalCount - doneCount;
@@ -30,4 +30,4 @@ function ListPage() {
     );
 }
 
-export default ListPage;
+export default History;
