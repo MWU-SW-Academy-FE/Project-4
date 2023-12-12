@@ -13,4 +13,7 @@
 - [x] 페이지 레이아웃 1차 구현
 - [x] 운동 횟수(ex 스쿼트 횟수)
 - [x] 기록 입력 폼
-- [ ] canvas-confetti 도입
+- [x] canvas-confetti 도입
+- [x] MUI 적용
+- [ ] 메인 작업, 모달 작업
+- [ ] 

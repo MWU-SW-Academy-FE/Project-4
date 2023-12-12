@@ -1,17 +1,19 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import ListPage from "./pages/ListPage";
-import WritePage from "./pages/WritePage";
+import History from "./pages/History";
+import Main from "./pages/Main";
 import Header from "./components/header";
+import { Button } from "@mui/material";
 
 
 function App() {
 	return (
 		<>
-			<Header/>
+			<Header />
+			<Button variant="contained">123</Button>
 			<Routes>
-				<Route path="/list" element={<ListPage />} />
-				<Route path="/write" element={<WritePage />} />
-				<Route path="*" element={<Navigate to="/list" />} />
+				<Route path="/history" element={<History />} />
+				<Route path="/" element={<Main />} />
+				<Route path="*" element={<Navigate to="/" />} />
 			</Routes>
 		</>
 	);
