@@ -18,7 +18,7 @@ function Root() {
     <>
         <ThemeProvider theme={theme}>
             <CssBaseline />
-            <App />
+            <App /> 
         </ThemeProvider>
     </>);
 }
