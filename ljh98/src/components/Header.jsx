@@ -1,42 +1,28 @@
 import { NavLink } from "react-router-dom";
 import classNames from "classnames";
+import { AppBar, Toolbar } from "@mui/material";
 
 function Header() {
     return (
-    <>
-        <header className="flex">
-            <NavLink 
-                to="/main"
-                className="mr-auto p-3 font-bold hover:text-red-500 cursor-pointer"
-            >
-                RC
-            </NavLink>
-            <ul>
-                <li>
-                    <NavLink 
-                        to="/main"
-                        className={({ isActive }) => classNames(
-                            `block p-3 font-bold hover:text-red-500 cursor-pointer`,
-                            {"text-red-500": isActive}
-                            )} 
-                    >
-                        메인
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink 
+        <AppBar position="fixed">
+            <Toolbar>
+                <div className="flex-1"></div>
+                <NavLink 
+                    to="/main"
+                    className="font-bold select-none self-stretch flex items-center"
+                >
+                    Challenge App
+                </NavLink>
+                <div className="flex-1 self-stretch flex justify-end">
+                    <NavLink
                         to="/history"
-                        className={({ isActive }) => classNames(
-                            `block p-3 font-bold hover:text-red-500 cursor-pointer`,
-                            {"text-red-500": isActive}
-                            )}  
+                        className="select-none flex items-center"
                     >
                         히스토리
                     </NavLink>
-                </li>
-            </ul>
-        </header>
-    </>
+                </div>
+            </Toolbar>
+        </AppBar>
     );
 }
 

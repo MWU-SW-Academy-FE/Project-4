@@ -17,3 +17,7 @@
 - [x] canvas-confetti 도입
 - [x] MUI 적용
 - [x] 메인 작업, 모달 작업 1차
+
+## 3주차
+- [x] CountNumber, RecordModal, hooks 작업
+- [x] 헤더 네비 변경
