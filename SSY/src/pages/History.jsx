@@ -1,32 +1,29 @@
-import { numberFormat } from "../utill";
+import { Button, Chip } from "@mui/material";
 
 function History() {
-    const goalCount = 100000;
-    const doneCount = 0;
-    const restCount = goalCount - doneCount;
-
     return (
-        <div className="flex-1 flex-shrink-0 flex justify-center items-center">
-            <div>
-                <h1 className="font-bold text-xl">현황</h1>
-                <div>남은 횟수 {numberFormat(restCount)}회</div>
-                <div>수행 횟수 {numberFormat(doneCount)}회</div>
+        <li className="mt-6 sm:mt-8">
+            <div className="flex gap-2">
+                <Chip label={"1회차"} variant="outlined" className="!pt-1" />
+                <Chip 
+                    label="2023-12-12" 
+                    variant="outlined"
+                    className="!pt-1" 
+                    color="primary"
+                />
             </div>
-            <div className="mt-5">
-                <h1 className="font-bold text-xl">기록</h1>
-                <div className="flex-gap-2 items-center">
-                    <span>40</span>
-                    <button className="btn btn-primary">적용</button>
-                    <button className="btn btn-primary">취소</button>
+            <div className="mt-2 sm:mt-4 shadow rounded-[20px] flex">
+                <div className="px-5 hover:text-[color:var(--mui-color-primary-main)] flex-grow flex items-center whitespace-pre-wrap leading-relaxed my-5">
+                    5회 수행
                 </div>
-                <div className="flex-gap-2 items-center">
-                    <button className="btn btn-primary">+ 10</button>
-                    <button className="btn btn-primary">+ 1</button>
-                    <button className="btn btn-primary">- 10</button>
-                    <button className="btn btn-primary">- 1</button>
-                </div>
+                <Button
+                    className="flex-shrink-0 !items-start !rounded-[0_20px_20px_0]"
+                    color="inherit"
+                >
+                    TEST
+                </Button>
             </div>
-        </div>
+        </li>
     );
 }
 

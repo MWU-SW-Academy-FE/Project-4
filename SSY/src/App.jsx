@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Nav />
-      <Button>123</Button>
+      <Button variant="contained">123</Button>
       <Routes>
         <Route path="/history" element={<History />} />
         <Route path="/main" element={<Main />} />
