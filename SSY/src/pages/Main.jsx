@@ -1,31 +1,48 @@
-import RecordModal from "../components/RecordModal";
+import { RecordModal, useRecordModalStatus } from "../components/RecordModal";
+import { Button } from "@mui/material";
+import useRecordsState from "../hooks";
+import CountNumber from "../components/CountNumber";
 
-function RecordAddModal() {
-    const status = {opened: true}
+function RecordAddModal({ status }) {
+    const recordsState = useRecordsState();
+
+    const saveRecord = (recordCount) => {
+
+    }
 
     return(
         <>
             <RecordModal
                 msg="몇회 진행하셨나요?"
                 status={status}
+                saveRecord={saveRecord}
             />
         </>
     )
 }
 
 function Main() {
+    const RecordModalStatus = useRecordModalStatus()
 
     return (
         <>
-            <RecordModal />
+            <RecordModal 
+                status={ RecordModalStatus }
+            />
             <div className="flex-1 flex items-center justify-center">
-                <div className="text-[70px] text-blue-300 select-none">
-                    <span>10</span>
-                </div>
-                <div className="flex justify-center">
-                    <button className="btn btn-outline btn-info" variant="contained" onClick="{}"> 
-                        스쿼트 횟수 기록하기
-                    </button>
+                <div>
+                    <div className="text-[70px] text-red-300 select-none font-mono">
+                        <CountNumber
+                            start={0}
+                            end={100}
+                            duration={3}
+                        />
+                    </div>
+                    <div className="flex justify-center">
+                        <Button variant="contained" onClick={RecordModalStatus.onOpen}> 
+                            스쿼트 횟수 기록하기
+                        </Button>
+                    </div>
                 </div>
             </div>
         </>
