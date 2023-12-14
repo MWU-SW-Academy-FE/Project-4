@@ -1,17 +1,19 @@
-import { NavLink } from "react-router-dom";
-import ListPage from "./pages/ListPage"
-import WritePage from "./pages/WritePage"
+import { Navigate, Route, Routes } from "react-router-dom";
+import History from "./pages/History"
+import Main from "./pages/Main"
+import Nav from "./components/Nav";
+import { Button } from "@mui/material";
 
 function App() {
   return (
     <>
-      <header>
-        <NavLink to="list" />
-        <li>리스트</li>
-        <li>작성</li>
-      </header>
-      <ListPage />
-      <WritePage />
+      <Nav />
+      <Button variant="contained">123</Button>
+      <Routes>
+        <Route path="/history" element={<History />} />
+        <Route path="/main" element={<Main />} />
+        <Route path="*" element={<Navigate to="/main" />}/>
+      </Routes>
     </>
   )
 }
