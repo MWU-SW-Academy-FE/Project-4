@@ -1,14 +1,14 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import History from "./pages/History";
 import Main from "./pages/Main";
-import Header from "./components/header";
 import { Button } from "@mui/material";
+import Nav from "./components/Header";
 
 
 function App() {
 	return (
 		<>
-			<Header />
+			<Nav />
 			<Button variant="contained">123</Button>
 			<Routes>
 				<Route path="/history" element={<History />} />
