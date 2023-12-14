@@ -3,9 +3,13 @@ import { todosAtom } from "../states";
 import RecordModal from "../components/RecordModal";
 
 function RecordAddModal() {
+	const status = {opened: true}
 	return (
 		<>
-			<RecordModal />
+			<RecordModal
+				msg="몇회 진행하셨나요?"
+				status={status}
+			/>
 		</>
 	)
 }
